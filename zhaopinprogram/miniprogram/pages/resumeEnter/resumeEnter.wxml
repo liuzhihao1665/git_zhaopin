@@ -1,0 +1,40 @@
+<view style='height:100vh'>
+<view>
+<image src='{{bgurl}}' class='login_bg ' mode='widthFix'></image></view>
+<view class="buttonView">
+
+    <button bindtap="buttonTap">简历链接</button>  
+  <!-- <view> -->
+  <button bindtap='upresume'>本地上传</button>
+  <!-- </view> -->
+
+<view class='mask' wx:if="{{model.isShow}}" bindtap="masktouch"></view>
+<view class='mask' wx:if="{{model1.isShow}}" bindtap="masktouch"></view>
+<view wx:if="{{model.isShow}}" class="model_box">
+<image src='{{model.src}}'class="model_img"></image>
+<view class='sc_box' bindtap='upbutton'>
+<image src='{{model.sc}}' class='model_sc'></image>
+<view class='model_title'>{{model.title}}</view>
+</view>
+</view>
+
+ <view wx:if="{{model1.isShow}}" class="model_box1">
+<image class="model_imgbg" src="./img/1.png"></image>
+<view class="sc_box1" >
+<view class="img_box1">
+<image src="./img/2.png"></image>
+</view>
+<view class='img_box2'>
+<image src="./img/3.png"></image>
+</view>
+<view class='input_box'>
+<input class="phone" placeholder="请输入您的手机号" maxlength='11'value="" bindinput ="mobileInput" /> 
+<!-- <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" class='getPhone' >获取手机号</button> -->
+<input class="link" placeholder="请粘贴简历链接" value="" bindinput ="urlInput" /> 
+</view>
+</view>
+<button class="upload" type="submit" bindtap='btnclick'>上传</button> 
+</view> 
+</view>
+</view>
+

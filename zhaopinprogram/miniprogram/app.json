@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/chooseLib/chooseLib",
+    "pages/createShare/createShare",
+    "pages/shareEnter/shareEnter",
+    "pages/jobList/jobList",
+    "pages/resumeEnter/resumeEnter"
+  ],
+  "window": {
+    "backgroundColor": "#4188f2",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4188f2",
+    "navigationBarTitleText": "招聘小程序",
+    "navigationBarTextStyle": "white"
+  }
+}

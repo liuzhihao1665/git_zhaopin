@@ -1,0 +1,47 @@
+<view class="shareContainer">
+  <view class="shareView" style="margin-top:20rpx">
+    <label>*</label>
+    <label>公司名称</label>
+    <input placeholder="请输入公司名称" class="companyInput"></input>
+  </view>
+  <view class="shareView">
+    <label>*</label>
+    <label>职位</label>
+    <input placeholder="请输入职位名称" class="jobInput"></input>
+  </view>
+  <view class="shareView">
+    <label>*</label>
+    <label>薪酬范围</label>
+    <input placeholder="请输入薪酬范围(例:15k-30k)" class="salaryInput"></input>
+  </view>
+  <view class="locationSharView">
+    <label>*</label>
+    <label>公司地址</label>
+    <input placeholder="请输入公司地址" class="locationInput"></input>
+  </view>
+  <view class="jobDesSharView">
+    <label>*</label>
+    <label>职位要求</label>
+    <textarea placeholder="请输入职位要求"></textarea>
+    <!-- <input placeholder="请输入公司地址" class="locationInput"></input> -->
+  </view>
+  <view class="jobDesSharView">
+    <label>*</label>
+    <label>职位描述</label>
+    <textarea placeholder="请输入职位描述"></textarea>
+    <!-- <input placeholder="请输入公司地址" class="locationInput"></input> -->
+  </view>
+  <button class="userinfo-avatar" style="background-image: url({{avatarUrl}})"></button>
+  <!-- 上传图片 -->
+  <view class="uploader">
+    <view class="uploader-text" bindtap="doUpload">
+      <button type="primary">上传图片</button>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl}}">
+      <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
+    </view>
+    <view id="canvas-container">
+      <canvas canvas-id='myCanvas' style="width:{{canvasStyle.width}};height:{{canvasStyle.height}}"></canvas>
+    </view>
+  </view>
+</view>

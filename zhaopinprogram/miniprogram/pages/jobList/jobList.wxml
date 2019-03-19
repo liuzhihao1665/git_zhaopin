@@ -1,0 +1,26 @@
+<view class="page-wrapper ">
+  <view class='page_row' bindtap="suo">
+    <view class="search">
+      <view class="df search_arr">
+        <icon class="searchcion" size='20' type='search'></icon>
+        <input class="searchword" placeholder="根据职位或时间搜索" bindinput="queryCondition" bindconfirm="queryJobList" />
+      </view>
+    </view>
+  </view>
+  <view class="first" wx:for="{{jobList}}" wx:key="_id">
+    <view class="word" style="display:flex;flex-direction: row;">
+      <view>{{item.jobName}}</view>
+      <view style="color:#999;margin-left:20rpx;">[{{item.yearMonthDay}}]</view>
+    </view>
+    <view class="word" style="display:flex;flex-direction: row;">
+      <view style="color:#999">[{{item.salary}}]</view>
+    </view>
+    <view class="word" style="display:flex;flex-direction: row;color:#999">
+      <view style="flex-grow:1">{{item.company}}</view>
+      <view>{{item.time}}</view>
+    </view>
+  </view>
+  <view class="add" bindtap='goToCreateShare'>
+    <image class="add-icon" src="./img/add.png"></image>
+  </view>
+</view>

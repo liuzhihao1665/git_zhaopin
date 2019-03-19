@@ -1,0 +1,99 @@
+.page-wrapper {
+    margin: 0;
+    font-size: 28rpx;
+    line-height: 1.5;
+    color: #333;
+    background-color: #ebebeb;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: transparent;
+    height: 120%;
+}
+page{
+  height: 100%;
+}
+   .page_row{  
+      display: flex;  
+      flex-direction: row;
+      position:relative; 
+      left:0rpx; 
+      background-color: #4188f2;
+      height: 72rpx;
+      width: 100%;
+    }  
+    .search{  
+      width: 85%;
+      
+      position:relative; 
+      left:58rpx; 
+    }  
+    .search_arr {  
+     
+      border: 1px solid #fefefe;  
+      background-color: #fefefe;
+      border-radius: 100rpx;  
+      margin-left: 0rpx;  
+    }  
+    .search_arr input{  
+      margin-left: 58rpx;  
+      height: 56rpx;  
+      border-radius: 5px; 
+      text-align: center;   
+    }  
+
+    .searchcion {  
+      margin: 10rpx 10rpx 10rpx 10rpx;  
+      position: absolute;  
+      right:4rpx;  
+      z-index: 15;  
+      width: 16px;  
+      height: 26px;  
+    }  
+    .searchword {
+      font-size: 26rpx;
+      color: #999;
+    }
+ 
+
+.first  {
+ position: relative;
+ height: 160rpx;
+ background-color: #fefefe; 
+display:flex;
+flex-direction: column;
+justify-content: center;
+margin:0rpx 0rpx 40rpx 0rpx;
+}
+.word{
+  margin: 28rpx;
+  margin-top: 16rpx;
+  color:#333;
+  font-size: 26rpx;
+  flex-direction: row;
+}
+.detail {
+  color:#999;
+  position: relative;
+  left:12rpx;
+}
+.yaoqiu {
+  position: relative;
+  top:12rpx;
+  left:-112rpx;
+}
+.yi {
+  position: relative;
+  top:12rpx;
+   display:flex;flex-direction: row;
+}
+.time {
+  position: relative;
+  left:330rpx;
+}
+.add-icon {
+  position: fixed;
+  width: 120rpx;
+  height: 120rpx;
+  bottom: 118rpx;
+  right: 20rpx;
+}

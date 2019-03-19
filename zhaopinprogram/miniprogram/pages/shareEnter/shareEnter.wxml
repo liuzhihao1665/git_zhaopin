@@ -1,0 +1,8 @@
+<view style="height:100%">
+<image src='{{bgurl}}' class='login_bg ' mode='widthFix'></image></view>
+<view class="buttonView">
+  <view><button bindgetuserinfo='OngetUserInfo' open-type='getUserInfo'>我要分享</button></view>
+  <view><button bindtap='onCreatecode'>我要投递</button></view>
+  <view><canvas id='testCanvas' class='mycanvas' canvas-id='testCanvas' style="width:{{canvasStyle.width}};height:{{canvasStyle.height}}"></canvas></view>
+  <!-- <view><image src='{{imageurl}}'></image></view> -->
+</view>

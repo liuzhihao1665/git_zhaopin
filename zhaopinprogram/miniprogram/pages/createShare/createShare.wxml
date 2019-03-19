@@ -1,0 +1,54 @@
+<view id="container">
+  <view class="shareContainer">
+  <view class="shareView" style="padding-top:20rpx">
+    <image mode="aspectFit" src="./img/bitian.png"></image>
+    <label>公司名称</label>
+    <input placeholder="请输入公司名称" class="companyInput colorGrey" bindinput="companyFun" value="{{resumeInfo.company}}"></input>
+  </view>
+  <view class="jobShareView">
+    <image mode="aspectFit" src="./img/bitian.png"></image>
+    <label>职位</label>
+    <input placeholder="请输入职位名称" class="jobInput colorGrey" bindinput="resumeNameFun" value="{{resumeInfo.resumeName}}"></input>
+  </view>
+  <view class="salaryShareView">
+    <image mode="aspectFit" src="./img/bitian.png"></image>
+    <label>薪酬范围</label>
+    <input placeholder="请输入薪酬范围(例:15k-30k)" class="salaryInput colorGrey" bindinput="salaryFun" value="{{resumeInfo.salary}}"></input>
+  </view>
+  <view class="locationSharView">
+    <image mode="aspectFit" src="./img/bitian.png"></image>
+    <label>公司地址</label>
+    <input placeholder="请输入公司地址" class="locationInput colorGrey" bindinput="locationFun" value="{{resumeInfo.location}}"></input>
+  </view>
+   <view class="jobDesSharView">
+    <image mode="aspectFit" src="./img/bitian.png"></image>
+    <label>职位职责</label>
+    <textarea placeholder="请输入职位职责,如要换行请用中文分号隔开" bindinput="introductionFun" value="{{resumeInfo.introduction}}" maxlength="200"></textarea>
+  </view>
+  <view class="jobDesSharView">
+    <image mode="aspectFit" src="./img/bitian.png"></image>
+    <label>职位要求</label>
+    <textarea placeholder="请输入职位要求,如要换行请用中文分号隔开" bindinput="requirementFun" value="{{resumeInfo.requirement}}" maxlength = "200"></textarea>
+  </view>
+  <!-- <view class="jobDesSharView">
+    <image mode="aspectFit" src="./img/bitian.png"></image>
+    <label>职位描述</label>
+    <textarea placeholder="请输入职位描述,如要换行请用中文分号隔开" bindinput="introduction">{{resumeInfo.introduction}}</textarea>
+  </view> -->
+  <view class="jobDesSharView" style="height:170rpx;border:none">
+    <image mode="aspectFit" src="./img/bitian.png"></image>
+    <label>海报底图</label>
+    <view style="text-align:center;" bindtap="doUpload">
+      <image class="haibaoPic" src="{{src}}"></image>
+      <view style="color:rgb(153,153,153);font-size:26rpx;">点击上传图片</view>
+    </view>
+  </view>
+  <view id="canvas-container" style="opacity:0;position:absolute;top:0;z-index:-1">
+    <canvas canvas-id='myCanvas' style="width:{{canvasStyle.width}};height:{{canvasStyle.height}}"></canvas>
+  </view>
+</view>
+ <!-- 生成二维码并保存图片 -->
+<view class="uploader-text" bindtap="getAvaterInfo" style="background-color:#ebebeb;">
+<button>保存</button>
+</view>
+</view>
